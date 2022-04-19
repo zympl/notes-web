@@ -1,8 +1,10 @@
 body {
     margin: 0%;
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'Rubik', sans-serif;
     background-color: #EBEBEB;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
 }
 
 .header-section {
@@ -35,7 +37,6 @@ body {
 
 .left-nav-title {
     color: #349EFF;
-    font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -71,7 +72,7 @@ body {
     margin-bottom: 20px;
 }
 
-.item1 {
+.item {
     width: 260px;
     height: 200px;
     display: flex;
