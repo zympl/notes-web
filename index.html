@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <script src="script.js"></script>
     <title>Notes | Home</title>
     <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,11 +12,11 @@
 
 <body>
     <header class="header-section">
-        <i class="ri-menu-fold-line icon nave-left-icon"></i>
+        <i class="ri-menu-fold-line icon nave-left-icon" onclick="toggleLeftNav()"></i>
         <h1 class="title-heading">Notes</h1>
     </header>
     <section class="section">
-        <nav class="left-nav">
+        <nav class="left-nav" id="leftNav" >
             <ul class="left-nav-list">
                 <li class="left-nav-item selected">Quick Notes</li>
                 <li class="left-nav-item">Work</li>
