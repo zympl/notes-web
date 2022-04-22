@@ -129,3 +129,41 @@ body {
     font-size: 24px;
     color: var(--text-primary);
 }
+body {
+    margin: 20px;
+    background-color:whitesmoke;
+    position: relative;
+    width: 1728px;
+    height: 1117px;
+  }
+  .head{
+    background-color: white;
+    margin: 10px;
+    border-radius: none;
+    display: flex;
+    padding: 0px;
+    border: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    position: absolute;
+    width: 1728px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 0px 10px;
+  }
+  .title{
+    display: 0;
+    background-color: white;
+    margin:10px;
+    padding: 10px;
+    text-align:start;
+    border:40px;
+    position: absolute;
+    width: 963px;
+    height: 943px;
+    left: 382px;
+    top: 127px;
+    
+  }
