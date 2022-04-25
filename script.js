@@ -4,8 +4,12 @@ function toggleLeftNav(event) {
     event.target.classList.toggle("ri-menu-unfold-line");
 }
 
-function addFolder() {
-    let folder = prompt("Enter the folder name?");
-    console.log(folder)
+let folderList = [];
 
+function addFolder() {
+    let folderName = prompt("Enter the folder name? ");
+    if (folderName !== null && folderName.length !== 0) {
+        folderList.push(folderName);
+    }
+    console.log(folderList)
 }
