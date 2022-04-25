@@ -5,7 +5,6 @@ function toggleLeftNav(event) {
 }
 
 let folderList = [];
-console.log(arr)
 
 function addFolder() {
     let folderName = prompt("Enter the folder name? ");
