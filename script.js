@@ -5,11 +5,14 @@ function toggleLeftNav(event) {
 }
 
 let folderList = [];
+const folderString = localStorage.getItem('folderList');
+folderList = JSON.parse(folderString);
 
 function addFolder() {
     let folderName = prompt("Enter the folder name? ");
     if (folderName !== null && folderName.length !== 0) {
         folderList.push(folderName);
+        localStorage.setItem('folderList', JSON.stringify(folderList));
     }
     console.log(folderList)
 }
