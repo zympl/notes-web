@@ -25,4 +25,9 @@ function renderFolder(name) {
     folderListView.appendChild(liElement)
 
 }
-window.addEventListener('load', () => renderFolder('Ajay'))
+window.addEventListener('load', renderFolderList)
+
+function renderFolderList() {
+    for (i = 0; i < folderList.length; i++)
+        renderFolder(folderList[i])
+}
