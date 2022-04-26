@@ -16,3 +16,13 @@ function addFolder() {
     }
     console.log(folderList)
 }
+
+function renderFolder(name) {
+    let liElement = document.createElement('li');
+    liElement.innerHTML = name;
+    liElement.classList.add("left-nav-item")
+    const folderListView = document.getElementById('folderListView')
+    folderListView.appendChild(liElement)
+
+}
+window.addEventListener('load', () => renderFolder('Ajay'))
