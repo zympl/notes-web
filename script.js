@@ -12,6 +12,7 @@ function addFolder() {
     let folderName = prompt("Enter the folder name? ");
     if (folderName !== null && folderName.length !== 0) {
         folderList.push(folderName);
+        renderFolder(folderName)
         localStorage.setItem('folderList', JSON.stringify(folderList));
     }
     console.log(folderList)
