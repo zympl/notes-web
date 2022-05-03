@@ -29,6 +29,8 @@ function renderFolder(name) {
 window.addEventListener('load', renderFolderList)
 
 function renderFolderList() {
+    renderFolder("Quick Notes")
     for (i = 0; i < folderList.length; i++)
+
         renderFolder(folderList[i])
 }
