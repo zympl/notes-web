@@ -7,6 +7,10 @@ function toggleLeftNav(event) {
 let folderList = [];
 const folderString = localStorage.getItem('folderList');
 folderList = JSON.parse(folderString);
+if (folderList == null) {
+    folderList = ["Quick Notes"];
+    localStorage.setItem('folderList', JSON.stringify(folderList));
+}
 
 function addFolder() {
     let folderName = prompt("Enter the folder name? ");
@@ -22,6 +26,7 @@ function renderFolder(name) {
     let liElement = document.createElement('li');
     liElement.innerHTML = name;
     liElement.classList.add("left-nav-item")
+        //liElement.classList.add("selected")
     const folderListView = document.getElementById('folderListView')
     folderListView.appendChild(liElement)
 
