@@ -26,6 +26,7 @@ function renderFolder(name) {
     let liElement = document.createElement('li');
     liElement.innerHTML = name;
     liElement.classList.add("left-nav-item")
+        //if liElement is selected apply selected class
         //liElement.classList.add("selected")
     const folderListView = document.getElementById('folderListView')
     folderListView.appendChild(liElement)
