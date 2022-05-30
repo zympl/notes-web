@@ -91,6 +91,10 @@ body {
     color: var(--text-primary);
 }
 
+.left-nav-item:hover {
+    background-color: var(--bg-grey)
+}
+
 .left-nav-item.selected {
     color: var(--primary-color);
     background-color: var(--bg-grey)
